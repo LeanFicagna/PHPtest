@@ -8,7 +8,7 @@ Teste de seleção para vaga PHP
 
 ## Como executar
 
-1. Clone o projeto na pasta publica do seu servidor Apache (`git clone https://github.com/LeanFicagna/PHPtest` para clonar)
+1. Clone o projeto na pasta pública do seu servidor Apache (`git clone https://github.com/LeanFicagna/PHPtest` para clonar)
     * No meu caso, utilizei o XAMPP, então clonarei o repositório na pasta `xampp\htdocs`
 2. Configurações do Bando de Dados
     - Usuário: '`root`'
