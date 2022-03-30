@@ -3,7 +3,7 @@
 Teste de seleção para vaga PHP
 
 ## Requisitos
-  - PHP 7
+  - PHP 7.4
   - MySQL
 
 ## Como executar
