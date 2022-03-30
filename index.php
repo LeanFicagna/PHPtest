@@ -9,7 +9,7 @@ include_once __DIR__ . '/db/connection.php';
             <div class="col-4">
                 <label for="cep" class="form-label">CEP:</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="cep">
+                    <input type="text" class="form-control" id="cep" maxlength="8">
                     <div class="input-group-append">
                         <button class="btn btn-dark" type="button" id="send" >Pesquisar</button>
                     </div>

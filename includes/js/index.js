@@ -5,8 +5,11 @@ function requestCep(cep) {
             () => alert('Formato de CEP inválido!')
         )
         .then( data => {
-            buildXML(data);
-            saveCep(cep);
+            debugger;
+            if(buildXML(data))
+                saveCep(cep);
+            else
+                alert("CEP não encontrado!");
         });
 }
 
@@ -20,15 +23,13 @@ function verCep(cep) {
     })
         .then( response => response.text() )
         .then( data => {
-            if(!buildXML(data)) {
+            if(!buildXML(data))
                 requestCep(cep);
-            }
         });
 }
 
 function saveCep(cep) {
     let formData = new FormData();
-    debugger;
     formData.append('cep', cep);
     formData.append('logradouro', document.getElementById('logradouro').value);
     formData.append('complemento', document.getElementById('complemento').value);
@@ -72,8 +73,10 @@ function buildXML(data) {
 const btn = document.getElementById('send');
 btn.addEventListener('click', function(e) {
     e.preventDefault();
-    let cep = document.getElementById('cep').value.replace(/\D/g, '')
+    let cep = document.getElementById('cep').value.replace(/\D/g, '');
+    if(cep.length != 8) {
+        alert('Formato de CEP inválido!');
+        return ;
+    }
     verCep(cep);
 });
-
-// requestCep('01001000');
