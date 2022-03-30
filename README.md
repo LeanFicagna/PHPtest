@@ -16,7 +16,7 @@ Teste de seleção para vaga PHP
     - Hostname: '`localhost`'
       * Caso precise alterar esses dados, vá até `config\config.php`
 3. Importe o arquivo endereco.sql em seu servidor MySQL devidamente configurado.
-4. Execute o IP: `http://localhost/PHPTest/`
+4. Acesse: `http://localhost/PHPTest/`
 
 ## Interface
 
